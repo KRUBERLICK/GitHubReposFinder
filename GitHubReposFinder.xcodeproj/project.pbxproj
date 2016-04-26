@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		5BAF1E8C1CCFAB720044E2BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF1E8B1CCFAB720044E2BD /* AppDelegate.swift */; };
-		5BAF1E8E1CCFAB720044E2BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF1E8D1CCFAB720044E2BD /* ViewController.swift */; };
+		5BAF1E8E1CCFAB720044E2BD /* SearchRepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF1E8D1CCFAB720044E2BD /* SearchRepoViewController.swift */; };
 		5BAF1E911CCFAB720044E2BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF1E8F1CCFAB720044E2BD /* Main.storyboard */; };
 		5BAF1E931CCFAB720044E2BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF1E921CCFAB720044E2BD /* Assets.xcassets */; };
 		5BAF1E961CCFAB720044E2BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF1E941CCFAB720044E2BD /* LaunchScreen.storyboard */; };
+		5BAF1EA01CCFB0460044E2BD /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF1E9F1CCFB0460044E2BD /* Repo.swift */; };
+		5BAF1EA21CCFB3E80044E2BD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF1EA11CCFB3E80044E2BD /* User.swift */; };
+		5BAF1EA41CCFE85C0044E2BD /* ReadmeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF1EA31CCFE85C0044E2BD /* ReadmeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5BAF1E881CCFAB720044E2BD /* GitHubReposFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubReposFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAF1E8B1CCFAB720044E2BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5BAF1E8D1CCFAB720044E2BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5BAF1E8D1CCFAB720044E2BD /* SearchRepoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepoViewController.swift; sourceTree = "<group>"; };
 		5BAF1E901CCFAB720044E2BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BAF1E921CCFAB720044E2BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BAF1E951CCFAB720044E2BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BAF1E971CCFAB720044E2BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BAF1E9F1CCFB0460044E2BD /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		5BAF1EA11CCFB3E80044E2BD /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5BAF1EA31CCFE85C0044E2BD /* ReadmeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadmeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				5BAF1E8B1CCFAB720044E2BD /* AppDelegate.swift */,
-				5BAF1E8D1CCFAB720044E2BD /* ViewController.swift */,
+				5BAF1E9F1CCFB0460044E2BD /* Repo.swift */,
+				5BAF1EA11CCFB3E80044E2BD /* User.swift */,
+				5BAF1E8D1CCFAB720044E2BD /* SearchRepoViewController.swift */,
+				5BAF1EA31CCFE85C0044E2BD /* ReadmeViewController.swift */,
 				5BAF1E8F1CCFAB720044E2BD /* Main.storyboard */,
 				5BAF1E921CCFAB720044E2BD /* Assets.xcassets */,
 				5BAF1E941CCFAB720044E2BD /* LaunchScreen.storyboard */,
@@ -136,8 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BAF1E8E1CCFAB720044E2BD /* ViewController.swift in Sources */,
+				5BAF1E8E1CCFAB720044E2BD /* SearchRepoViewController.swift in Sources */,
 				5BAF1E8C1CCFAB720044E2BD /* AppDelegate.swift in Sources */,
+				5BAF1EA21CCFB3E80044E2BD /* User.swift in Sources */,
+				5BAF1EA01CCFB0460044E2BD /* Repo.swift in Sources */,
+				5BAF1EA41CCFE85C0044E2BD /* ReadmeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +263,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GitHubReposFinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kruberlick.GitHubReposFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -262,6 +275,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GitHubReposFinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kruberlick.GitHubReposFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
